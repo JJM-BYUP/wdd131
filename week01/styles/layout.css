@@ -17,17 +17,6 @@ header {
     grid-column: 1 / 3;
 }
 
-nav {
-    margin: 0 auto 2rem;
-    max-width: 100vw;
-}
-
-.navigation {
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
 main {
     background-color: lightgrey;
     color: black;
