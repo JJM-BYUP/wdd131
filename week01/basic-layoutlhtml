@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main>Main Content</main>
-    <div class="aside">Aside Content</div>
+    <div class="aside-content">Aside Content</div>
     <footer>Footer Content</footer>
 </body>
 </html>

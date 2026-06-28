@@ -33,7 +33,7 @@ main {
     grid-column: 1 / 2;
 }
 
-.aside {
+.aside-content{
     color: white;
     grid-column: 2 / 3;
 }
