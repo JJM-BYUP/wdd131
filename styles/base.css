@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #9ede80;
+    --header-color: #9ede80;
     /* Sage Green */
-    --secondary-color: #1e1543;
+    --text1-color: #1e1543;
     /* Midnight Violet */
     --accent1-color: #fffbbd;
     /* Very Very Light Yellow */
@@ -22,23 +22,16 @@ body {
     font-family: "Google Sans", sans-serif;
     font-weight: 400;
     height: vh;
-    color: var(--secondary-color);
+    color: var(--text1-color);
     background-color: white;
 }
 
-h1,
-h2,
-h3, .navigation a {
+h1, h2, h3, .navigation a {
     font-weight: 700;
 }
 
-h3,
-footer {
-    background-color: var(--primary-color);
-}
-
-footer p {
-    color: var(--secondary-color)
+#course-title, h2, h3, footer {
+    background-color: var(--header-color);
 }
 
 #lastModified {
@@ -49,7 +42,6 @@ footer p {
 #course-title {
     display: block;
     text-align: center;
-    background-color: var(--primary-color);
 }
 
 nav {
@@ -68,12 +60,12 @@ nav {
     text-decoration: none;
     color: white;
     text-align: center;
+    border: white;
 }
 
 .navigation a:hover {
-    color: var(--secondary-color);
+    color: var(--text1-color);
     font-weight: 700;
-    background-color: var(--accent3-color);
     border-bottom: 3px solid --accent1-color;
  
 }
