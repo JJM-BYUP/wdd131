@@ -1,13 +1,13 @@
 :root {
-    --primary-color: 7FB069;
+    --primary-color: #9ede80;
     /* Sage Green */
-    --secondary-color: FFFBBD;
-    /* Lemon Chiffon */
-    --accent1-color: 161032;
+    --secondary-color: #1e1543;
     /* Midnight Violet */
-    --accent2-color: 502419;
+    --accent1-color: #fffbbd;
+    /* Very Very Light Yellow */
+    --accent2-color: #814333;
     /* Espresso */
-    --accent3-color: E6AA68;
+    --accent3-color: #e4ac70;
     /* Light Caramel */
 }
 
@@ -17,15 +17,63 @@
     box-sizing: border-box;
 }
 
+/* Fonts and colors */
 body {
     font-family: "Google Sans", sans-serif;
     font-weight: 400;
+    height: vh;
+    color: var(--secondary-color);
+    background-color: white;
 }
 
-h1 {
-    font-weight: 600;
+h1,
+h2,
+h3, .navigation a {
+    font-weight: 700;
 }
 
-.course-title {
+h3,
+footer {
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: var(--secondary-color)
+}
+
+#lastModified {
+    color: var(--accent2-color);
+}
+
+/* Structure and formatting*/
+#course-title {
     display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+nav {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--accent2-color);
+    align-items: center;
+    height: 3rem;
+}
+
+.navigation a {
+    flex: 1 1 auto;
+    display: block;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+    background-color: var(--accent3-color);
+    border-bottom: 3px solid --accent1-color;
+ 
 }
