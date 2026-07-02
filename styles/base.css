@@ -21,16 +21,25 @@
 body {
     font-family: "Google Sans", sans-serif;
     font-weight: 400;
-    height: vh;
+    height: 95vh;
+    width: 100%;
+    max-width: 1550px;
+    margin-inline: auto;
     color: var(--text1-color);
     background-color: white;
 }
 
-h1, h2, h3, .navigation a {
+h1,
+h2,
+h3,
+.navigation a {
     font-weight: 700;
 }
 
-#course-title, h2, h3, footer {
+#course-title,
+h2,
+h3,
+footer {
     background-color: var(--header-color);
 }
 
@@ -42,15 +51,17 @@ h1, h2, h3, .navigation a {
 #course-title {
     display: block;
     text-align: center;
+    padding: 15px;
 }
 
 nav {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--accent2-color);
+    background-color: var(--text1-color);
     align-items: center;
     height: 3rem;
+    padding: 1px;
 }
 
 .navigation a {
@@ -64,8 +75,106 @@ nav {
 }
 
 .navigation a:hover {
-    color: var(--text1-color);
+    color: var(--accent3-color);
     font-weight: 700;
-    border-bottom: 3px solid --accent1-color;
- 
+    text-decoration: overline underline;
+    text-underline-offset: 5px;
+}
+
+main {
+    width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1 {
+    display: block;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.aboutInfo {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.card1 {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1,
+.card1, .card2, .wyPic {
+    border: 2px solid lightgray;
+    border-radius: 1%;
+}
+
+p {
+    padding: 10px;
+}
+
+h3 {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.aboutMe {
+    width: 80%;
+}
+
+
+.wyPic {
+    max-height: 200px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.wyPic img {
+    height: 130px;
+    width: auto;
+    display: block;
+    
+}
+
+.wyPic figcaption {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.wyInfo {
+    width: 750px;
+}
+
+.wyPlace {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+}
+
+
+.wyPlace::after {
+    content: "";
+    height: 2px;
+    width: 70%;
+    background: lightgray;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+}
+
+.card2 {
+    grid-column: 2 / 3;
+}
+
+.card2 ul {
+    padding: 30px;
 }
